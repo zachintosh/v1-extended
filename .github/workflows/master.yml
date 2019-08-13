@@ -4,6 +4,8 @@ jobs:
   build:
     name: Actions for Discord
     runs-on: ubuntu-latest
+    env:
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
     steps:
       - uses: actions/checkout@master
       - uses: ./discord

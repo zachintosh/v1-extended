@@ -5,7 +5,7 @@ jobs:
     steps:
       - name: Actions for Discord
         uses: Ilshidur/action-discord@0.0.2
-        args: "v1-extended: New changes have been pushed to master"
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          args: "v1-extended: New changes have been pushed to master"
       - run: echo Complete!

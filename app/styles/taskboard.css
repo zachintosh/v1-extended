@@ -227,3 +227,41 @@ div.action-menu[gref],
 .summary * {
   color: #ddd !important;
 }
+
+.enabledButton {
+  background-color: #4449;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10000;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+
+.enabledButton:hover {
+  background-color: #3379
+}
+
+.enabledButton::before,
+.enabledButton::after {
+  width: 6px;
+  content: '';
+  height: 100%;
+  border: solid 2px #666;
+  box-sizing: border-box;
+}
+
+.enabledButton::before {
+  margin-right: 4px;
+  border-right: none;
+}
+
+.enabledButton::after {
+  margin-left: 4px;
+  border-left: none;
+}

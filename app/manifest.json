@@ -39,8 +39,10 @@
       "js": [
         "scripts/refreshV1.js",
         "scripts/confetti.js",
-        "scripts/throw-confetti.js",
-        "scripts/task-priorities.js"
+        "scripts/task-priorities.js",
+        "scripts/total-todo.js",
+        "scripts/observers.js",
+        "scripts/simple-mode.js"
       ],
       "run_at": "document_idle",
       "all_frames": false

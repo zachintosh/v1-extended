@@ -3,7 +3,7 @@ on: push
 jobs:
   build:
     name: Actions for Discord
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     steps:
       - uses: actions/checkout@master
       - uses: ./discord

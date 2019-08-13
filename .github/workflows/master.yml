@@ -4,7 +4,6 @@ jobs:
   build:
     name: Actions for Discord
     runs-on: ubuntu-latest
-    args: "v1-extended: New changes have been pushed to master"
     steps:
       - uses: actions/checkout@master
       - uses: ../discord

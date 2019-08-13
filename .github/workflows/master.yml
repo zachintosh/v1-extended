@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     args: "v1-extended: New changes have been pushed to master"
     steps:
-      - uses: Ilshidur/action-discord@0.0.2
+      - uses: actions/checkout@master
+      - uses: ../discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}

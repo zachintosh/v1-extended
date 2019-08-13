@@ -2,10 +2,10 @@ name: A workflow for my Hello World file
 on: push
 jobs:
   build:
+    name: Actions for Discord
+    runs-on: ubuntu-latest
     steps:
-      - name: Actions for Discord
-        uses: Ilshidur/action-discord@0.0.2
-        runs-on: ubuntu-latest
+      - uses: Ilshidur/action-discord@0.0.2
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           args: "v1-extended: New changes have been pushed to master"

@@ -9,4 +9,3 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           args: "v1-extended: New changes have been pushed to master"
-      - run: echo Complete!

@@ -1,11 +1,11 @@
-name: A workflow for my Hello World file
+name: Notify on Discord
 on: push
 jobs:
   build:
     name: Actions for Discord
     runs-on: ubuntu-latest
+    args: "v1-extended: New changes have been pushed to master"
     steps:
       - uses: Ilshidur/action-discord@0.0.2
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          args: "v1-extended: New changes have been pushed to master"

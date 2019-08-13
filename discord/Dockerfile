@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/octocat/hello-world"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 
-RUN apt install curl
+RUN apt-get install curl
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

@@ -1,0 +1,229 @@
+.task-card {
+	background: linear-gradient(0deg, #111, #272727) !important;
+	border-radius: 1px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23) !important;
+	padding: 10px 10px 5px !important;
+	border-bottom: none !important;
+	width: calc(100% - 20px) !important;
+	box-sizing: border-box !important;
+	margin: 10px !important;
+  float: unset !important;
+  transition: all .2s ease-in-out !important;
+  cursor: grab;
+  color: #ddd !important;
+}
+
+.task-card:hover {
+	box-shadow: 0 4px 12px rgba(0,0,0,0.16), 0 4px 12px rgba(0,0,0,0.23) !important;
+}
+
+.task-card .title {
+  box-sizing: border-box !important;
+  padding: 0 20px 0 0 !important;
+}
+
+.status.row-cell {
+	padding: 0 !important;
+	border-bottom: solid 1px #333;
+  box-sizing: border-box !important;
+  background-color: black;
+}
+
+div.owners {
+  /* color: transparent; */
+  color: #d8dde6 !important;
+  display: inline-block;
+  padding: 5px 0 0 0 !important;
+}
+
+div.owners a {
+  color: #9ea5b1 !important;
+}
+
+a.open-by-name[data-assettype="Member"] {
+	/* background-color: #61666e; */
+	color: #d8dde6 !important;
+	/* padding: 3px 7px; */
+	/* border-radius: 20px; */
+	/* margin-top: 5px !important; */
+  display: inline-block;
+  cursor: pointer;
+}
+
+.task-card-actions {
+  border-radius: 50%;
+}
+
+.task-card-actions-container.menu-item {
+	top: 5px !important;
+	right: 5px !important;
+  border-radius: 50%;
+  cursor: default;
+  opacity: .1;
+  transition: opacity .2s ease-in-out;
+}
+
+.task-card:hover .task-card-actions-container.menu-item {
+  opacity: 1;
+}
+
+.content.story-card.story {
+  /* background-color:  white !important; */
+  background: linear-gradient(0deg, #111, #272727) !important;
+	border-radius: 1px;
+	padding: 0 !important;
+	border-bottom: none !important;
+}
+
+.content.story-card.story a {
+  color: rgb(79, 234, 255) !important;
+}
+
+div.identity-right {
+  background-color: #333 !important;
+}
+
+div.identity-right::before {
+  background-color: #333 !important;
+  margin-left: -10px !important;
+  display: none;
+}
+
+.content.story-card.story .status {
+	height: 1em;
+	line-height: 1.1em;
+	display: inline-flex;
+	border-radius: 10px;
+	padding: 3px 7px;
+}
+
+#page-container .main-content-wrapper {
+	padding: 0 !important;
+	overflow: hidden;
+}
+
+.main-card.story-card-container {
+	padding: 10px !important;
+  border-bottom: solid 1px #333;
+  background-color: #222 !important;
+}
+
+.taskboard {
+	border-spacing: 0 !important;
+	margin-top: -1px !important;
+}
+
+.wrapper {
+	margin-top: -1px !important;
+}
+
+.gadget.TaskBoard.board {
+	margin: 0;
+}
+
+.taskboard .header td {
+  border-top: none !important;
+}
+
+.filter-bar {
+	margin-bottom: 0 !important;
+  padding: 5px !important;
+  background-color: #333 !important;
+}
+
+.filter-bar .input-field {
+  background-color: white !important;
+}
+
+.titlebar,
+.titlebar label,
+.titlebar .toolbar-button,
+.top-bar-actions {
+  background-color: #222 !important;
+  color: white !important;
+}
+
+.filters-and-reports {
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  background-color: #333 !important;
+  color: white !important;
+}
+
+.filters-and-reports label {
+  color: white !important;
+}
+
+.todo {
+  bottom: 10px !important;
+  right: 10px !important;
+	color: #0096e6 !important;
+}
+
+div.action-menu[gref],
+.react-lookup-popover.filter-by-anything-lookup,
+.lookup.active .results {
+  border: none !important;
+  border-color: transparent !important;
+	padding: 5px 0 !important;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23) !important;
+}
+
+.action-menu hr + a {
+	border-top: none !important;
+}
+
+.main-card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23) !important;
+}
+
+.main-card .title {
+  margin: 5px 10px !important;
+  padding: 0 !important;
+}
+
+.main-card .status {
+  margin: 5px 10px !important;
+}
+
+.main-card .left-bottom-content {
+  padding: 0 !important;
+}
+
+.main-card .bottom-content {
+  padding: 0 !important;
+}
+
+.main-card span.owners {
+  color: white;
+  padding: 5px 10px 10px !important;
+  display: inline-block;
+}
+
+.filters-and-reports {
+  height: 24px !important;
+  padding-left: 10px !important;
+}
+
+.filters {
+  padding: 0 !important;
+}
+
+.filter-item label {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.filter-item select {
+  background-color: white !important;
+  height: 24px !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.summary {
+  background-color: #222 !important;
+}
+.summary * {
+  color: #ddd !important;
+}

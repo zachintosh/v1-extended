@@ -1,3 +1,137 @@
+/* Task Cards */
+ .task-card {
+  width: calc(100% - 20px) !important;
+  border-radius: 0 !important;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23) !important;
+  padding: 10px 10px 5px !important;
+  box-sizing: border-box !important;
+  margin: 10px !important;
+  float: unset !important;
+  transition: all .1s ease-in-out !important;
+  cursor: grab;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.16), 0 4px 12px rgba(0,0,0,0.23) !important;
+}
+
+/* The title on a task card */
+.task-card > div.title {
+  box-sizing: border-box !important;
+  padding: 0 20px 0 0 !important;
+  margin-left: 0 !important;
+  overflow: initial !important;
+}
+
+/* The assignee on a task card */
+.owners {
+  padding: 0 !important;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+/* The "to-do" hours on a task card */
+.todo {
+  font-size: .6rem !important;
+  line-height: .7rem !important;
+  bottom: 4px !important;
+}
+
+/* Shrink the fat summary column */
+.summary {
+  width: 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* Give all columns equal width (except summary) */
+table {
+  table-layout: fixed !important;
+}
+
+table.sticky-header {
+  width: initial !important;
+}
+
+/*  Story Card Container */
+.story-card-container {
+  padding: 10px !important;
+  position: relative !important;;
+}
+
+/* Story Card */
+.story-card {
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  position: initial !important;
+}
+
+/* Status on a story card */
+.story-card .status {
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  line-height: 12px !important;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+/* Hide the identity section of a story */
+.story-card .identity {
+  display: none !important;
+}
+
+.story-card .title {
+  overflow: initial !important;
+}
+
+.story-card .right-bottom-content {
+  position: absolute !important;
+  bottom: 8px;
+  right: 8px;
+}
+
+.enabledButton {
+  background-color: #4449;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10000;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+
+.enabledButton:hover {
+  background-color: #3379
+}
+
+.enabledButton::before,
+.enabledButton::after {
+  width: 6px;
+  content: '';
+  height: 100%;
+  border: solid 2px #666;
+  box-sizing: border-box;
+}
+
+.enabledButton::before {
+  margin-right: 4px;
+  border-right: none;
+}
+
+.enabledButton::after {
+  margin-left: 4px;
+  border-left: none;
+}
+
+/* 
+body[data-theme="dark"]
 .task-card {
 	background: linear-gradient(0deg, #111, #272727) !important;
 	border-radius: 1px;
@@ -30,7 +164,6 @@
 }
 
 div.owners {
-  /* color: transparent; */
   color: #d8dde6 !important;
   display: inline-block;
   padding: 5px 0 0 0 !important;
@@ -41,11 +174,7 @@ div.owners a {
 }
 
 a.open-by-name[data-assettype="Member"] {
-	/* background-color: #61666e; */
 	color: #d8dde6 !important;
-	/* padding: 3px 7px; */
-	/* border-radius: 20px; */
-	/* margin-top: 5px !important; */
   display: inline-block;
   cursor: pointer;
 }
@@ -68,7 +197,6 @@ a.open-by-name[data-assettype="Member"] {
 }
 
 .content.story-card.story {
-  /* background-color:  white !important; */
   background: linear-gradient(0deg, #111, #272727) !important;
 	border-radius: 1px;
 	padding: 0 !important;
@@ -264,4 +392,4 @@ div.action-menu[gref],
 .enabledButton::after {
   margin-left: 4px;
   border-left: none;
-}
+} */

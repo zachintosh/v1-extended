@@ -18,9 +18,9 @@ function buildTaskPriorities() {
     }
 
     const priorityColorMap = {
-      'P1': 'red',
-      'P2': 'rgb(228, 148, 19)',
-      'P3': '#33dd77',
+      'P1': '#d50000',
+      'P2': '#F57F17',
+      'P3': '#00695C',
     }
     
     jiraLink.innerHTML = priority ? `<span class="${priority}">${priority}</span>  •  ${jiraID}` : jiraID
@@ -36,7 +36,7 @@ function buildTaskPriorities() {
     owners.insertBefore(jiraLink, owners.firstChild)
 
     if (jiraLink && jiraLink.parentElement && jiraLink.parentElement.parentElement) {
-      jiraLink.parentElement.parentElement.style.borderLeft = `solid 2px ${priorityColorMap[priority]}`
+      jiraLink.parentElement.parentElement.style.borderLeft = `solid 4px ${priorityColorMap[priority]}`
     }
   })
 

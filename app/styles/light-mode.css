@@ -1,0 +1,10 @@
+body[data-theme="light"] .row-cell {
+  background: #e6f0f4 !important;
+}
+body[data-theme="light"] .header td {
+  background: #d7eaf1 !important;
+}
+body[data-theme="light"] .story-card-container,
+body[data-theme="light"] tr[rowid] td.summary {
+  background: #e6f0f4 !important;
+}

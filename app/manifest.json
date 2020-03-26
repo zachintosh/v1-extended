@@ -8,33 +8,26 @@
     "128": "images/icon-128.png"
   },
   "default_locale": "en",
-  "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
-  },
   "permissions": [
     "https://www5.v1host.com/*"
   ],
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
-  },
   "content_scripts": [
     {
       "matches": [
-        "https://www5.v1host.com/FH-V1/Default.aspx?menu=TaskBoardPage*"
+        "https://www5.v1host.com/FH-V1/Default.aspx?menu=TaskBoardPage"
       ],
       "css": [
         "styles/taskboard.css",
-        "styles/priorities.css"
+        "styles/priorities.css",
+        "styles/dark-mode.css",
+        "styles/light-mode.css"
       ],
       "run_at": "document_end",
       "all_frames": false
     },
     {
       "matches": [
-        "https://www5.v1host.com/FH-V1/Default.aspx?menu=TaskBoardPage*"
+        "https://www5.v1host.com/FH-V1/Default.aspx?menu=TaskBoardPage"
       ],
       "js": [
         "scripts/refreshV1.js",

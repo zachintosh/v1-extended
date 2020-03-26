@@ -7,6 +7,7 @@ const selectors = [
   '.filters-and-reports',
   '.titlebar',
   '.filters.filter-by-anything',
+  '#top-bar',
 ]
 
 const selectorDisplayValues = selectors.reduce((acc, selector) => {

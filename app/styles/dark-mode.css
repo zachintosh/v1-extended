@@ -1,0 +1,22 @@
+body[data-theme="dark"] .wrapper {
+  background: #111 !important;
+}
+body[data-theme="dark"] .row-cell {
+  background: #212121 !important;
+}
+body[data-theme="dark"] .header td {
+  background: #263238 !important;
+}
+body[data-theme="dark"] .story-card-container,
+body[data-theme="dark"] tr[rowid] td.summary {
+  background: #263238 !important;
+}
+body[data-theme=dark] div.task-card {
+  background: #37474F;
+}
+body[data-theme=dark] div.task-card:hover {
+  background: #455A64;
+}
+body[data-theme=dark] div.task-card:active {
+  background: #546E7A;
+}
